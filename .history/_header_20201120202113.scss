@@ -1,0 +1,13 @@
+.logo {
+    height: 118px;
+    width: 292px;
+    margin: 40px;
+}
+
+.NavMenu {
+    list-style: none;
+    display: flex;
+    a {
+        background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    }
+}

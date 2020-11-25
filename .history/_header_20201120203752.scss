@@ -1,0 +1,17 @@
+.logo {
+    height: 118px;
+    width: 292px;
+    margin: 40px;
+}
+
+.NavMenu {
+    list-style: none;
+    display: flex;
+    li {
+        Stroke: linear-gradient(red, yellow, blue);
+        color: black;
+    }
+    a {
+        color: inherit;
+    }
+}

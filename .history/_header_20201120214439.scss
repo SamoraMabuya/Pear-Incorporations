@@ -1,0 +1,31 @@
+.logo {
+    height: 118px;
+    width: 292px;
+    margin: 40px;
+}
+
+.Navbar {
+    display: inline-flex;
+    width: 100%;
+}
+
+.NavMenu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 100px 70px 0px 0px;
+    li {
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.6em;
+        margin: 0px 15px 0px 0px;
+        text-decoration: none;
+    }
+    a {
+        color: inherit;
+    }
+}

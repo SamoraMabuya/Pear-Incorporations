@@ -1,0 +1,261 @@
+.active {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  padding: 2px 0px 2px 0px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(270deg, #356EC4 -17.69%, rgba(180, 45, 227, 0.72) 118.65%);
+}
+
+.logo {
+  height: 118px;
+  width: 292px;
+  margin: 40px;
+}
+
+.Navbar {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.NavMenu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  margin: 100px 70px 0px 0px;
+  position: absolute;
+  right: 10px;
+}
+
+.NavMenu li {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  margin: 0px 30px 0px 0px;
+  background: linear-gradient(95.66deg, #382AD7 -0.43%, rgba(211, 35, 173, 0.88) 75.83%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.NavMenu a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.aboutH2 {
+  font-family: Montserrat;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  -webkit-transform: translate(0px, 250px);
+          transform: translate(0px, 250px);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-11.29%, rgba(211, 35, 173, 0.88)), color-stop(67.74%, #382AD7));
+  background: linear-gradient(180deg, rgba(211, 35, 173, 0.88) -11.29%, #382AD7 67.74%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  padding: 10px 0px 0px 0px;
+  border-image-slice: 1;
+  border-top: 1px solid;
+  width: 100px;
+  margin: 0 auto;
+  border-image-source: linear-gradient(270deg, #356EC4 -17.69%, rgba(180, 45, 227, 0.72) 118.65%);
+}
+
+.active {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  padding: 2px 0px 2px 0px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(270deg, #356EC4 -17.69%, rgba(180, 45, 227, 0.72) 118.65%);
+}
+
+.logo {
+  height: 118px;
+  width: 292px;
+  margin: 40px;
+}
+
+.Navbar {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.NavMenu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  margin: 100px 70px 0px 0px;
+  position: absolute;
+  right: 10px;
+}
+
+.NavMenu li {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  margin: 0px 30px 0px 0px;
+  background: linear-gradient(95.66deg, #382AD7 -0.43%, rgba(211, 35, 173, 0.88) 75.83%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.NavMenu a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-line {
+  width: 120%;
+  height: 1px;
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(-17.69%, #356EC4), color-stop(118.65%, rgba(180, 45, 227, 0.72)));
+  background-image: linear-gradient(270deg, #356EC4 -17.69%, rgba(180, 45, 227, 0.72) 118.65%);
+}
+
+.homeH3 {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  background: linear-gradient(100deg, #382AD7 30.95%, rgba(211, 35, 173, 0.88) 70.94%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-transform: translateY(80px);
+          transform: translateY(80px);
+}
+
+.homeH2 {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  width: 565px;
+  margin: 0 auto;
+  -webkit-transform: translateY(130px);
+          transform: translateY(130px);
+  left: 437px;
+  background: linear-gradient(103.78deg, rgba(211, 35, 173, 0.88) 11.89%, #382AD7 84.16%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  border-right: 1px solid;
+  border-left: 1px solid;
+  padding: 0px 10px 0px 10px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(270deg, #356EC4 -17.69%, rgba(180, 45, 227, 0.72) 118.65%);
+}
+
+.homeH2 span {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 37px;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.container .contactbtn {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  -webkit-transform: translate(0px, 228px);
+          transform: translate(0px, 228px);
+  width: 258px;
+  border-radius: 8px;
+  background: linear-gradient(97.85deg, #D323AD 14.7%, #382AD7 95.33%);
+  display: inline-block;
+  padding: 1.5px;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.container .contactbtn span {
+  background: #fff;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: inherit;
+}
+
+.service-images-wrapper {
+  height: 50vh;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.service-images-wrapper li {
+  margin: 0 auto;
+  list-style: none;
+  -webkit-transform: translate(0px, 343px);
+          transform: translate(0px, 343px);
+}
+
+.service-images-wrapper li img {
+  height: 185px;
+  width: 261px;
+}
+
+.service-images-wrapper li h4 {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  background: linear-gradient(95.66deg, #382AD7 -0.43%, rgba(211, 35, 173, 0.88) 75.83%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: center;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+/*# sourceMappingURL=styles.css.map */

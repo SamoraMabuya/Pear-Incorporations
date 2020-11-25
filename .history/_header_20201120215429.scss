@@ -1,0 +1,41 @@
+.logo {
+    height: 118px;
+    width: 292px;
+    margin: 40px;
+}
+
+.Navbar {
+    display: inline-flex;
+    width: 100%;
+}
+
+.NavMenu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 100px 70px 0px 0px;
+    li {
+        font-family: Montserrat;
+        font-size: 20 px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.2em;
+        margin: 0px 30px 0px 0px;
+        background: linear-gradient(95.66deg, #382AD7 -0.43%, rgba(211, 35, 173, 0.88) 75.83%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .active {
+        height: 0px;
+        width: 74px;
+        left: 786px;
+        top: 88px;
+        border-radius: nullpx;
+    }
+}
