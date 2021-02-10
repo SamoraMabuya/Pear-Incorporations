@@ -51,7 +51,7 @@
 }
 
 .sidenav {
-    transform: translate(0px, 250px);
+    transform: translate(49px, 260px);
     overflow: hidden;
     display: block;
     .sticky-navlink {
@@ -59,7 +59,7 @@
         font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 24px;
         letter-spacing: 0.06em;
         background: linear-gradient(95.66deg, #382AD7 -0.43%, rgba(211, 35, 173, 0.88) 75.83%);
@@ -84,24 +84,23 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    top: 0;
-    margin-top: 0px;
+    transform: translateY(150px);
 }
 
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 
 .sticky+.content {
-    padding-top: 60px;
+    padding-top: 250px;
 }
 
 .reveal {
-    // transform: translateY(150px);
+    transform: translateY(150px);
     opacity: 0;
     transition: all 2s ease;
 }
 
 .reveal.element {
-    // transform: translateY(0px);
+    transform: translateY(0px);
     opacity: 1;
 }

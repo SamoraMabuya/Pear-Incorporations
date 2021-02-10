@@ -134,12 +134,12 @@ function reveal() {
 
         var windowheight = window.innerHeight;
         var revealtop = reveals[i].getBoundingClientRect().top;
-        var revealpoint = 100;
+        var revealpoint = 150;
 
         if (revealtop < windowheight - revealpoint) {
-            reveals[i].classList.add('element');
+            reveals[i].classList.add('active');
         } else {
-            reveals[i].classList.remove('element');
+            reveals[i].classList.remove('active');
 
         }
     }
