@@ -56,8 +56,8 @@
 }
 
 .NavMenu .navlink {
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .NavMenu .navlink:hover {
@@ -82,9 +82,17 @@
           box-shadow: 0px 4px 10px 2px rgba(21, 34, 148, 0.29);
   border-radius: 10px;
   width: 140px;
+  -webkit-animation-name: hover;
+          animation-name: hover;
+  -webkit-animation-duration: 2ms;
+          animation-duration: 2ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
-.sidenav li {
+.sidenav .sticky-navlink {
   list-style: none;
   font-family: Montserrat;
   font-style: normal;
@@ -94,8 +102,8 @@
   letter-spacing: 0.06em;
   margin-bottom: 25px;
   margin-top: 20px;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .sidenav .sticky-navlink:hover {
@@ -132,33 +140,36 @@
   border-image-source: linear-gradient(270deg, #356EC4 -17.69%, rgba(180, 45, 227, 0.72) 118.65%);
 }
 
+.showElement {
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  opacity: 0;
+}
+
+.showElement.element {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  opacity: 1;
+}
+
 .reveal {
   -webkit-transform: translateY(150px);
           transform: translateY(150px);
-  opacity: 0;
-}
-
-.reveal.element {
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-  opacity: 1;
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
-}
-
-.showElement {
-  -webkit-transform: translateY(-100px);
-          transform: translateY(-100px);
-  -webkit-transition: all 3s ease;
-  transition: all 3s ease;
   opacity: 0;
+  z-index: 2;
 }
 
-.showElement.elements {
+.reveal.showdiv {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
-  -webkit-transition: all 3s ease;
-  transition: all 3s ease;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
   opacity: 1;
 }
 
@@ -405,8 +416,8 @@
 }
 
 .NavMenu .navlink {
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .NavMenu .navlink:hover {
@@ -431,9 +442,17 @@
           box-shadow: 0px 4px 10px 2px rgba(21, 34, 148, 0.29);
   border-radius: 10px;
   width: 140px;
+  -webkit-animation-name: hover;
+          animation-name: hover;
+  -webkit-animation-duration: 2ms;
+          animation-duration: 2ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
-.sidenav li {
+.sidenav .sticky-navlink {
   list-style: none;
   font-family: Montserrat;
   font-style: normal;
@@ -443,8 +462,8 @@
   letter-spacing: 0.06em;
   margin-bottom: 25px;
   margin-top: 20px;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .sidenav .sticky-navlink:hover {
@@ -481,33 +500,36 @@
   border-image-source: linear-gradient(270deg, #356EC4 -17.69%, rgba(180, 45, 227, 0.72) 118.65%);
 }
 
+.showElement {
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  opacity: 0;
+}
+
+.showElement.element {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  opacity: 1;
+}
+
 .reveal {
   -webkit-transform: translateY(150px);
           transform: translateY(150px);
-  opacity: 0;
-}
-
-.reveal.element {
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-  opacity: 1;
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
-}
-
-.showElement {
-  -webkit-transform: translateY(-100px);
-          transform: translateY(-100px);
-  -webkit-transition: all 3s ease;
-  transition: all 3s ease;
   opacity: 0;
+  z-index: 2;
 }
 
-.showElement.elements {
+.reveal.showdiv {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
-  -webkit-transition: all 3s ease;
-  transition: all 3s ease;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
   opacity: 1;
 }
 

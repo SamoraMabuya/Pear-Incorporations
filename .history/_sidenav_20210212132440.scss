@@ -1,0 +1,35 @@
+.content {
+    padding-top: 70px;
+}
+
+.sticky {
+    position: fixed;
+    padding-top: 0px;
+    top: 0;
+}
+
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+
+.sticky+.content {
+    padding-top: 170px;
+}
+
+.sidenav .sticky-link.activebtn {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(270deg, #356EC4 -17.69%, rgba(180, 45, 227, 0.72) 118.65%);
+}
+
+.sidenav {
+    transform: translateY(150px);
+    transition: all 3s ease;
+    opacity: 0;
+}
+
+.sidenav.elements {
+    transform: translateY(0px);
+    transition: all 3s ease;
+    opacity: 1;
+}
