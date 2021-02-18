@@ -275,7 +275,7 @@
 
 .box {
   width: 30%;
-  height: 500px;
+  height: auto;
   background: #FFFFFF;
   border: 1px solid #053B6D;
   -webkit-box-sizing: border-box;
@@ -295,12 +295,15 @@
       -ms-flex-pack: center;
           justify-content: center;
   background: none;
+  padding-bottom: 60px;
 }
 
 .box .infowrapper {
   margin-left: auto;
-  margin-right: auto;
-  width: 40%;
+  padding-left: 100px;
+  margin-right: 40px;
+  width: 50%;
+  height: 10%;
   -webkit-transform: translate(0px, 65px);
           transform: translate(0px, 65px);
   display: -webkit-box;
@@ -308,6 +311,7 @@
   display: flex;
   max-width: 100%;
   max-height: 100%;
+  padding-bottom: 88px;
 }
 
 .box .infowrapper .aboutspan {
@@ -318,24 +322,29 @@
   line-height: 130%;
   letter-spacing: 0.06em;
   color: #3E3636;
+  width: 400px;
   height: auto;
   max-width: 100%;
   max-height: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 30px;
+  padding-left: 50px;
 }
 
 .box .imgbox {
-  width: 300px;
-  height: 300px;
-  margin-top: 100px;
+  width: 270px;
+  height: 270px;
+  margin-top: 50px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 50px;
+  padding-right: 100px;
 }
 
 .box .imgbox img {
-  max-width: 100%;
-  max-height: 100%;
+  margin-right: 140px;
+  padding-right: 140px;
+  width: 270px;
+  height: 270px;
+  position: relative;
 }
 
 .track .box.active-slide {
@@ -386,114 +395,119 @@
   margin-inline: 10px;
 }
 
-@media screen and (max-width: 1230px) {
+@media screen and (max-width: 1090px) {
+  .bottom-nav {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    visibility: hidden;
+  }
+  .track {
+    height: 800px;
+  }
   .infowrapper {
+    width: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
     margin-left: auto;
     margin-right: auto;
-    height: 100px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
   .aboutspan {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 130%;
-    letter-spacing: 0.06em;
-    color: #3E3636;
-    height: auto;
-    -webkit-transform: translateX(30px);
-            transform: translateX(30px);
+    width: 30px;
+    margin-top: 250px;
+    position: absolute;
+    padding-bottom: 300px;
   }
   .imgbox {
-    margin-top: 100px;
-    margin-left: 300px;
-  }
-  .imgbox img {
-    width: 230px;
-    height: 230px;
-    margin-left: 40px;
-  }
-}
-
-@media screen and (max-width: 960px) {
-  .infowrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    width: 330px;
+    height: 330px;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
-    height: 10%;
-    -webkit-transform: translate(0px, 65px);
-            transform: translate(0px, 65px);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  .imgbox img {
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     max-width: 100%;
     max-height: 100%;
-    padding-bottom: 85px;
-    padding-bottom: 85px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 20%;
   }
-  .aboutspan {
-    -webkit-transform: translateY(220px);
-            transform: translateY(220px);
+  .box {
+    display: block;
+    height: auto;
+    padding-bottom: 320px;
+    width: 500px;
+    position: absolute;
+    margin-right: 190px;
+    margin-left: auto;
   }
   .sidenav {
     visibility: hidden;
   }
-  .track {
-    margin-top: 400px;
-    width: 100%;
-    height: 760px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-transition: -webkit-transform 250ms ease-in;
-    transition: -webkit-transform 250ms ease-in;
-    transition: transform 250ms ease-in;
-    transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
-    overflow: hidden;
-    -webkit-transform: translateX(5%);
-            transform: translateX(5%);
-    z-index: -2;
-  }
-  .box {
-    width: 530px;
-    height: 740px;
-    background: none;
-    border: 1px solid #053B6D;
+  .about-nav-wrapper {
+    display: block;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    z-index: 2;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     -webkit-box-shadow: 0px 4px 10px 2px rgba(21, 34, 148, 0.29);
             box-shadow: 0px 4px 10px 2px rgba(21, 34, 148, 0.29);
-    -webkit-transform: translate(100px, 0%);
-            transform: translate(100px, 0%);
-    position: absolute;
-    display: block;
-    z-index: -2;
-    -webkit-clip-path: circle(0% at 0 50%);
-            clip-path: circle(0% at 0 50%);
+    border-radius: 10px;
+    width: 180px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-right: 200px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: -330px;
   }
-  .imgbox {
-    -webkit-transform: translateY(-260px);
-            transform: translateY(-260px);
-    margin-left: 25px;
-    margin-right: 15px;
+  .about-nav-wrapper li {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100px;
   }
-  .imgbox img {
-    margin-left: 25px;
-    margin-right: 15px;
+  .about-nav-wrapper .about-link {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .bottom-nav {
-    margin-top: 300px;
+}
+
+@media screen and (max-width: 730px) {
+  .box {
     position: absolute;
-    bottom: -30%;
-    margin-left: auto;
-    margin-right: auto;
+    height: 680px;
+    width: 360px;
+    padding-bottom: 320px;
+  }
+  .infowrapper {
+    position: absolute;
+    -webkit-transform: translateY(80px);
+            transform: translateY(80px);
+    right: 20%;
+  }
+  .aboutspan {
+    width: 30px;
+    margin-top: 250px;
+    position: absolute;
+    padding-bottom: 300px;
   }
 }
 
@@ -806,7 +820,7 @@
 }
 
 .Services {
-  margin-top: 400px;
+  margin-top: 700px;
 }
 
 .service-wrapper {
