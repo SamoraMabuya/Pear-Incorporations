@@ -858,8 +858,8 @@
 }
 
 .service-nav-wrapper {
-  -webkit-transform: translate(-70px, 381px);
-          transform: translate(-70px, 381px);
+  -webkit-transform: translate(18%, 381px);
+          transform: translate(18%, 381px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -946,7 +946,8 @@
   transition: transform 250ms ease-in;
   transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 100px;
+  position: relative;
 }
 
 .service-track .service-box.service-active {
@@ -986,8 +987,8 @@
   -webkit-box-shadow: 0px 4px 10px 2px rgba(183, 114, 185, 0.37);
           box-shadow: 0px 4px 10px 2px rgba(183, 114, 185, 0.37);
   border-radius: 20px;
-  -webkit-transform: translate(0px, 300px);
-          transform: translate(0px, 300px);
+  -webkit-transform: translate(0px, 430px);
+          transform: translate(0px, 430px);
   -webkit-transition: -webkit-transform 250ms ease-in;
   transition: -webkit-transform 250ms ease-in;
   transition: transform 250ms ease-in;
@@ -1085,8 +1086,8 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
@@ -1096,9 +1097,121 @@
   margin-top: 100px;
 }
 
-@media screen and (max-width: 620px) {
+.webImage {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 1330px) {
+  .service-track {
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
+  }
+  .service-nav-wrapper {
+    -webkit-transform: translate(13%, 381px);
+            transform: translate(13%, 381px);
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .service-nav-wrapper {
+    -webkit-transform: translate(11%, 381px);
+            transform: translate(11%, 381px);
+    position: relative;
+  }
+  .service-track {
+    -webkit-transform: translateX(-70px);
+            transform: translateX(-70px);
+  }
   .mobiledev-box {
-    width: 350px;
+    margin-left: 47%;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .service-nav-wrapper {
+    -webkit-transform: translate(8%, 381px);
+            transform: translate(8%, 381px);
+  }
+  .service-track {
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .service-nav-wrapper {
+    -webkit-transform: translate(6%, 381px);
+            transform: translate(6%, 381px);
+  }
+}
+
+@media screen and (max-width: 1100px) and (max-width: 1050px) {
+  .service-nav-wrapper {
+    -webkit-transform: translate(4%, 381px);
+            transform: translate(4%, 381px);
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .mobiledev-box {
+    width: 425px;
+    height: 550px;
+  }
+  .contain {
+    width: 140px;
+    height: 140px;
+  }
+  .webImage {
+    margin-top: 10px;
+  }
+  .service-box {
+    margin-left: 3%;
+  }
+  .service-nav-wrapper {
+    -webkit-transform: translate(3%, 381px);
+            transform: translate(3%, 381px);
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .mobiledev-box {
+    position: relative;
+    top: -100%;
+    margin: auto;
+    left: 2%;
+  }
+  .mobiledev-boxtwo {
+    top: -200%;
+  }
+  .mobiledev-boxthree {
+    top: -300%;
+  }
+  .service-track {
+    background: blue;
+    height: 0px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1 fr 1fr 1fr;
+        grid-template-columns: 1fr 1 fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .service-box {
+    position: relative;
+    margin-left: 15%;
+    width: 80%;
+    height: auto;
+    display: block;
+  }
+  .serviceboxtwo {
+    top: -100%;
+  }
+  .serviceboxthree {
+    top: -200%;
+  }
+  .service-infowrapper {
+    height: auto;
+    margin-left: 10%;
   }
 }
 
@@ -1134,21 +1247,24 @@
   margin-bottom: 100px;
 }
 
-.inputgroup {
-  position: absolute;
-  left: 180px;
+.contactInline {
+  width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateX(18%);
+          transform: translateX(18%);
 }
 
-.inputgroup2 {
-  position: absolute;
-  left: 180px;
-  margin-top: 125px;
+.inputfieldswrapper {
+  position: relative;
+  width: 70%;
 }
 
-.inputgroup3 {
-  position: absolute;
-  left: 180px;
-  margin-top: 250px;
+.inputgroups {
+  position: relative;
+  width: 70%;
+  margin-top: 5px;
 }
 
 .inputfield {
@@ -1160,6 +1276,7 @@
   border-image-slice: 1;
   border-image-source: linear-gradient(283.35deg, #BE35FF 59.23%, rgba(16, 45, 147, 0.85) 123.85%);
   outline: none;
+  width: 80%;
 }
 
 .Name {
@@ -1199,9 +1316,7 @@
 }
 
 .Message {
-  margin-bottom: 300px;
-  position: absolute;
-  left: 755px;
+  position: relative;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   font-family: Montserrat;
@@ -1217,26 +1332,32 @@
 }
 
 .messagebox {
-  width: 500px;
+  width: 130%;
   height: 278px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.25);
-  -webkit-transform: translate(750px, 50px);
-          transform: translate(750px, 50px);
+  -webkit-transform: translate(0px, 50px);
+          transform: translate(0px, 50px);
   outline: none;
   border: none;
   padding: 10px;
+  display: block;
+}
+
+.messagewrapper {
+  position: relative;
+  margin-left: 55%;
+  top: -275px;
 }
 
 .send-button {
-  position: absolute;
+  position: relative;
   width: 260px;
   height: 55px;
-  left: 870px;
-  display: inline-block;
+  top: -200px;
+  margin-left: 70%;
   text-align: center;
-  margin-top: 420px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -1469,6 +1590,31 @@
 .copyright-wrapper img {
   width: 15px;
   height: 15px;
+}
+
+@media screen and (max-width: 930px) {
+  .Contact {
+    margin-top: 1500px;
+  }
+  .contactInline {
+    position: relative;
+    display: block;
+  }
+  .messagewrapper {
+    top: 50px;
+    margin-left: 0;
+    width: 85%;
+  }
+  .send-button {
+    top: 140px;
+    margin-left: 30%;
+  }
+  .inputfieldswrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 body {
