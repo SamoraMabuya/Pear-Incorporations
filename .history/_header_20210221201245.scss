@@ -140,16 +140,15 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 950px) {
     .NavMenu {
         display: none;
     }
     .mobileNavMenu {
         float: right;
-        position: absolute;
+        position: relative;
         top: 0;
-        right: 0%;
-        margin: 70px 40px 0px 0px;
+        margin: 70px 0px 0px 0px;
     }
     .whiteblock {
         float: right;
