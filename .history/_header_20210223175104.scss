@@ -1,0 +1,214 @@
+    .active {
+        border-bottom: 1px solid;
+        border-top: 1px solid;
+        padding: 2px 0px 2px 0px;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(270deg, #356EC4 -17.69%, rgba(180, 45, 227, 0.72) 118.65%);
+    }
+    
+    .activelink {
+        border-bottom: 1px solid;
+        border-top: 1px solid;
+        padding: 2px 0px 2px 0px;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(270deg, #356EC4 -17.69%, rgba(180, 45, 227, 0.72) 118.65%);
+    }
+    
+    .logo {
+        height: 118px;
+        width: 292px;
+        margin: 40px;
+    }
+    
+    .Navbar {
+        display: inline-flex;
+        width: 100%;
+    }
+    
+    .NavMenu {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin: 100px 70px 0px 0px;
+        position: absolute;
+        right: 10px;
+        li {
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.2em;
+            margin: 0px 30px 0px 0px;
+            background: linear-gradient(95.66deg, #382AD7 -0.43%, rgba(211, 35, 173, 0.88) 75.83%);
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+        .navlink {
+            transition: all .2s ease-in-out;
+        }
+        .navlink:hover {
+            transform: scale(1.2);
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+    
+    .sidenav {
+        transform: translate(40px, 50px);
+        overflow: hidden;
+        display: block;
+        background: #fff;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 10px 2px rgba(21, 34, 148, 0.29);
+        border-radius: 10px;
+        width: 140px;
+        animation-name: hover;
+        animation-duration: 2ms;
+        animation-fill-mode: backwards;
+        animation-play-state: paused;
+        .sticky-navlink {
+            list-style: none;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.06em;
+            margin-bottom: 25px;
+            margin-top: 20px;
+            transition: all .2s ease-in-out;
+        }
+        .sticky-navlink:hover {
+            transform: scale(1.2);
+        }
+        a {
+            background: linear-gradient(95.66deg, #382AD7 -0.43%, rgba(211, 35, 173, 0.88) 75.83%);
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+    }
+    
+    .content {
+        padding-top: 70px;
+    }
+    
+    .sticky {
+        position: fixed;
+        padding-top: 0px;
+        top: 0;
+    }
+    
+    .sticky+.content {
+        padding-top: 170px;
+    }
+    
+    .sidenav .sticky-link.activebtn {
+        border-bottom: 1px solid;
+        border-top: 1px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(270deg, #356EC4 -17.69%, rgba(180, 45, 227, 0.72) 118.65%);
+    }
+    
+    .showElement {
+        transform: translateY(-150px);
+        transition: all 2s ease;
+        opacity: 0;
+    }
+    
+    .showElement.element {
+        transform: translateY(0px);
+        transition: all 2s ease;
+        opacity: 1;
+    }
+    
+    .reveal {
+        transform: translateY(150px);
+        transition: all 2s ease;
+        opacity: 0;
+        z-index: 2;
+    }
+    
+    .reveal.showdiv {
+        transform: translateY(0px);
+        transition: all 2s ease;
+        opacity: 1;
+    }
+    
+    @media screen and (min-width: 1000px) {
+        .close {
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width: 1000px) {
+        .close {
+            z-index: 3;
+            font-size: 35px;
+            position: absolute;
+            right: 100px;
+            top: 40px;
+            display: flex;
+            cursor: pointer;
+        }
+        .menu {
+            font-family: Montserrat;
+            font-size: 22px;
+            margin-right: 20px;
+        }
+        .close i {
+            font-size: 26px;
+            color: black;
+            cursor: pointer;
+        }
+        .Navbar .NavMenu {
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            max-width: 400px;
+            top: 0;
+            text-align: center;
+            background: #fff;
+            z-index: 4;
+            margin: 0 auto;
+            padding-top: 160px;
+            li {
+                margin-bottom: 40px;
+            }
+        }
+        .mobileNavMenu {
+            float: right;
+            position: absolute;
+            right: 0%;
+            margin: 70px 40px 0px 0px;
+        }
+        .whiteblock {
+            float: right;
+            top: 0;
+            margin-top: 0px;
+            width: 60px;
+            height: 48px;
+            // left: 309px;
+            background: #FFFFFF;
+            box-shadow: 1px 2px 6px -1px rgba(0, 0, 0, 0.8);
+            border-radius: 5px;
+            padding-top: 10px;
+        }
+        .hamburgerlines {
+            width: 60%;
+            height: 2.5px;
+            background: linear-gradient(0deg, #9E96FA, #9E96FA), #9E96FA;
+            border-radius: 5px;
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 8px;
+        }
+    }
